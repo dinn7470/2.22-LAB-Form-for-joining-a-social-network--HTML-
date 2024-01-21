@@ -12,11 +12,17 @@
         div {
             margin-bottom: 10px;
         }
+
+        label {
+            display: inline-block;
+            width: 100px;
+        }
     </style>
     <title>Social Network Form</title>
 </head>
 <body>
 <h1>Join a Social Network</h1>
+<form action="https://wp.zybooks.com/form-viewer.php" method="POST" enctype="multipart/form-data">
     <div>
         <label for="fullName">Full Name:</label>
         <input type="text" id="fullName" name="fullName" required>
@@ -28,12 +34,12 @@
     </div>
 
     <div>
-        <label for="about">About:</label>
+        <label for="about">About you:</label>
         <textarea id="about" name="about" rows="3" cols="50"></textarea>
     </div>
 
     <div>
-        <label for="picture">Picture:</label>
+        <label for="picture">Photo:</label>
         <input type="file" id="picture" name="picture">
     </div>
 
